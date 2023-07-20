@@ -166,7 +166,6 @@ p{
     padding-top:5%;
     display: flex;
     flex-direction: column;
-    align-items: self-end;
     text-align: right;
 }
 .second-banner-content h1{
@@ -192,7 +191,6 @@ p{
 }
 .secondary-banner-image>img{
     width:100%;
-    margin-right:10px;
 }
 
 #our-purpose{
@@ -219,6 +217,15 @@ p{
         background-position-x: 90%;
         padding: 15% 0px;
     }
+    .secondary-banner-container {
+        flex-direction: column-reverse;
+    }
+    .second-banner-content{
+        text-align:center;
+    }
+    .secondary-banner-image{
+        right:0px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px){
@@ -233,6 +240,15 @@ p{
     .banner-content{
         background-position-x: 80%;
         padding: 15% 0px;
+    }
+    .secondary-banner-container {
+        flex-direction: column-reverse;
+    }
+    .second-banner-content{
+        text-align:center;
+    }
+    .secondary-banner-image{
+        right:0px;
     }
 }
 
