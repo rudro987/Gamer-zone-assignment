@@ -288,7 +288,6 @@ p{
 .play-images {
     position:relative;
 }
-
 .cat-image {
     position: absolute;
     bottom: 0;
@@ -352,6 +351,24 @@ p{
         display:flex;
         justify-content: center;
     }
+    .play-container{
+        flex-direction:column;
+    }
+    .cowboy-image{
+        width: 70%;
+    }
+    .play-images{
+        display:flex;
+        justify-content: center;
+    }
+    .cat-image{
+        width:30%;
+        bottom:-5%;
+        left:5%;
+    }
+    .play-content {
+        text-align: center;
+    }
     
 }
 
@@ -396,6 +413,23 @@ p{
         display:flex;
         justify-content: center;
     }
-    
+    .play-container{
+        flex-direction:column;
+    }
+    .play-content {
+        text-align: center;
+    }
+    .cowboy-image{
+        width: 70%;
+    }
+    .play-images{
+        display:flex;
+        justify-content: center;
+    }
+    .cat-image{
+        width:30%;
+        bottom:-5%;
+        left:5%;
+    }
 }
 
