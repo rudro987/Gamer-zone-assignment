@@ -84,12 +84,21 @@ h1{
 /* top banner styles */
 .top-banner-container{
     display:flex;
-    justify-content: space-evenly;
-    background: url('./images/Group\ 14.png');
-    background-repeat:no-repeat;
+    justify-content: flex-start;
+    gap: 25px;
+}
+.content-main{
+    max-width: 900px;
+    width: 100%; 
 }
 .banner-content{
-    padding-top:7%;
+    padding-top:15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./images/Group\ 14.png');
+    background-repeat:no-repeat;
+    height:100%;
 }
 .banner-content h1{
     font-weight:600;
@@ -136,7 +145,9 @@ h1{
     font-size: var(--paragraph-large-size);
     font-weight:600;
 }
-
+.banner-image>img{
+    width:100%;
+}
 
 
 /* responsive styles */
@@ -144,16 +155,28 @@ h1{
 @media screen and (max-width: 576px){
     .nav-container, .nav, .menu-first ul{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }  
+    .top-banner-container {
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        background-position-x: 90%;
+        padding: 15% 0px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px){
     .nav-container, .nav, .menu-first ul{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+    }
+    .top-banner-container {
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        background-position-x: 80%;
+        padding: 15% 0px;
     }
 }
 
