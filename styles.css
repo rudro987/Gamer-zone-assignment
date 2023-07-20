@@ -79,3 +79,11 @@ h1{
     color: var(--menu-color);
 }
 
+@media screen and (max-width: 576px){
+    .container, .nav, .menu-first ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+
