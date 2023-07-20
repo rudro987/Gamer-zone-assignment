@@ -268,6 +268,47 @@ p{
     -webkit-text-fill-color: transparent;
     font-weight: 600;
 }
+
+/* play instantly styles */
+#play-instantly {
+    display: flex;
+    justify-content: center;
+}
+.play-container{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+.play-content{
+    text-align: right;
+    padding:15% 10%;
+}
+.play-images {
+    position:relative;
+}
+
+.cat-image {
+    position: absolute;
+    bottom: 0;
+    left: -20%;
+}
+.play-content-title{
+    background: var(--linear-pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.play-content-desc{
+    font-weight: 700;
+    margin-bottom:30px;
+}
+.play-content p{
+    line-height:30px;
+}
+
 /* responsive styles */
 
 @media screen and (max-width: 576px){
