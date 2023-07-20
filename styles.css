@@ -29,6 +29,11 @@ h1{
     color: var(--title-color);
 }
 
+p{
+    color:var(--secondary-color);
+    font-size: var(--paragraph-default-size);
+}
+
 /* Header styles */
 .nav-container{
     display:flex;
@@ -84,7 +89,6 @@ h1{
 /* top banner styles */
 .top-banner-container{
     display:flex;
-    justify-content: flex-start;
     gap: 25px;
 }
 .content-main{
@@ -102,7 +106,6 @@ h1{
 }
 .banner-content h1{
     font-weight:600;
-    display:flex;
 }
 .banner-content h2{
     background:var(--linear-purple);
@@ -110,7 +113,6 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 6rem;
-    font-weight: 800px;
 }
 .banner-content ul{
     list-style-type: none;
@@ -150,6 +152,58 @@ h1{
 }
 
 
+/* Secondary banner section styles >> We are gamer */
+.secondary-banner-container{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 25px;
+    background:linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 5% 0;
+}
+
+.second-banner-content{
+    padding-top:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    text-align: right;
+}
+.second-banner-content h1{
+    font-weight:600;
+    background: var(--linear-purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.second-banner-content p{
+    line-height:35px;
+}
+
+#secondary-banner-desc{
+    padding:30px 0px;
+}
+.secondary-banner-buttons{
+    margin-bottom:30px;
+}
+.secondary-banner-image {
+    position: relative;
+    right: 35px;
+}
+.secondary-banner-image>img{
+    width:100%;
+    margin-right:10px;
+}
+
+#our-purpose{
+    font-size: 1.5rem;
+    font-weight:500;
+}
+#unleash{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 /* responsive styles */
 
 @media screen and (max-width: 576px){
@@ -159,6 +213,7 @@ h1{
     }  
     .top-banner-container {
         flex-direction: column-reverse;
+        padding:0px 30px;
     }
     .banner-content{
         background-position-x: 90%;
@@ -173,6 +228,7 @@ h1{
     }
     .top-banner-container {
         flex-direction: column-reverse;
+        padding:0px 30px;
     }
     .banner-content{
         background-position-x: 80%;
