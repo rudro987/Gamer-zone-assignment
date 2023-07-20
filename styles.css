@@ -552,13 +552,56 @@ footer{
         margin-top:50px;
         margin-bottom:50px;
     }
+    .footer-menu ul {
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        row-gap: 30px;
+    }
+    
+    .footer-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-icons>img {
+        margin: 0 auto;
+    }
+    
+    .footer-menu ul li {
+        margin: 0 auto;
+        font-size:var(--paragraph-default-size);
+    }
+    .footer-menu2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        padding-left: 20px;
+    }
+    
+    .footer-menu2 ul li {
+        margin: 0 auto;
+        font-size:var(--paragraph-default-size);
+    }
+    .footer-menu2 {
+        padding: 29px 0;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+    .copyright p{
+        font-size:var(--paragraph-default-size);
+    }
+    
+    .footer-menu {
+        padding-bottom: 30px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px){
     :root{
-        --title-size: 2rem;
-        --paragraph-default-size: 0.875rem;
-        --paragraph-large-size: 1rem;
+        --title-size: 2.5rem;
+        --paragraph-default-size: 1rem;
+        --paragraph-large-size: 1.125rem;
     }
     h1{
         font-size:var(--title-size);
@@ -652,6 +695,49 @@ footer{
     #careers{
         margin-top:50px;
         margin-bottom:50px;
+    }
+    .footer-menu ul {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        row-gap: 30px;
+    }
+    
+    .footer-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-icons>img {
+        margin: 0 auto;
+    }
+    
+    .footer-menu ul li {
+        margin: 0 auto;
+        font-size:var(--paragraph-default-size);
+    }
+    .footer-menu2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        padding-left: 20px;
+    }
+    
+    .footer-menu2 ul li {
+        margin: 0 auto;
+        font-size:var(--paragraph-default-size);
+    }
+    .footer-menu2 {
+        padding: 29px 0;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+    .copyright p{
+        font-size:var(--paragraph-default-size);
+    }
+    
+    .footer-menu {
+        padding-bottom: 30px;
     }
 }
 
